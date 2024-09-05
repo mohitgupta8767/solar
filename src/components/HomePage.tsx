@@ -22,19 +22,19 @@ const HomePage = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
                     <Card
                         title="Price Intelligence Dashboard"
-                        description="The Price Intelligence Dashboard provides users with predictive analytics on the pricing of PV ancillary components over the next 12 months. Utilizing advanced algorithms, machine learning, and historical data, the intellugence model generates reliable price forecasts and recommendations, helping businesses anticipate market changes. This forward-looking tool aids in planning, budgeting, and optimizing procurement strategies by offering a clear picture of expected price trends."
+                        description="The Price Intelligence Dashboard predicts PV component prices for 12 months using advanced algorithms, aiding in planning and procurement strategies."
                         items={sidebarItems[1].href}
                         icon={GoGraph}
                     />
                     <Card
-                        title="Corpus Knowledge Bot"
-                        description="The Chat-Bot is an interactive tool that provides real-time updates and insights on the latest market activities and speculations in the PV industry. It leverages artificial intelligence and natural language processing to offer users quick access to relevant market information, such as historical price movements, predicted price trends, supply chain disruptions, policy changes, and industry news. Users can query the Chat-Bot for specific information, such as current and forecasted prices, recent market trends, or expert opinions on future market directions. This feature is particularly useful for staying informed about rapid market changes and making agile, data-driven decisions."
+                        title="SolAnc"
+                        description="The Chat-Bot delivers real-time PV market updates, using AI to provide insights on prices, trends, disruptions, and news for informed decisions."
                         items={sidebarItems[2].href}
                         icon={RiRobot3Line}
                     />
                     <Card
                         title="Descriptive Dashboard"
-                        description="The Analytical Dashboard is designed to provide deep insights into historical market trends and behaviors for PV ancillary components. It allows users to analyze vast amounts of historical data to identify patterns, price volatility, seasonality, fundamental factors and other market dynamics that have influenced prices over time. The dashboard provides visualizations such as trend lines, and comparative graphs to facilitate a comprehensive understanding of the market's past performance. By analyzing these trends, businesses can better understand the factors that drive price changes, assess the risk, and develop more informed long-term procurement and pricing strategies."
+                        description="The Analytical Dashboard offers deep insights into historical PV component trends, visualizing patterns, volatility, and market dynamics for informed procurement strategies."
                         items={sidebarItems[3].href}
                         icon={VscGraphLeft}
                     />

@@ -3,7 +3,7 @@ import { RiTwitterXFill } from "react-icons/ri"
 
 const AboutPage = () => {
     return (
-        <div className="min-h-screen p-2">
+        <div className="h-[calc(100vh-60px)] pt-2">
             <div>
                 <div className="bg-white shadow-lg rounded-lg p-6">
                     <h3

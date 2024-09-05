@@ -32,7 +32,7 @@ export const sidebarItems: SidebarItem[] = [
         icon: GoGraph
     },
     {
-        name: "Corpus Knowledge Bot",
+        name: "SolAnc",
         href: "https://solarstreamlit.azurewebsites.net/",
         icon: RiRobot3Line,
     },

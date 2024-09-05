@@ -15,27 +15,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.layout {
-  height: calc(100vh - 50px);
-}
-
-.sidebar_top {
-  width: max-content;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.sidebar_logo {
-  width: 3.4rem;
-  height: 3.5rem;
-  object-fit: cover;
-  border-radius: 1rem;
-}
-
 [data-collapse="true"] {
   width: 5.3rem;
 }
@@ -43,11 +22,6 @@ body {
 [data-collapse="true"] .sidebar_name,
 [data-collapse="true"] .sidebar_logo-name {
   display: none;
-}
-
-.header {
-  background-color: #fff;
-  border-bottom: 1px solid #e5e7eb;
 }
 
 .header_title {
@@ -72,32 +46,8 @@ body {
   transform: scale(1.2);
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 99%;
-  background-color: #fff;
-  margin-top: 10px;
-  border-radius: 10px;
-  padding: 20px;
-  /* height: calc(100vh - 50px); */
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
 .container {
   padding: 2px 16px;
-}
-
-.card a {
-  color: blue;
-  text-decoration: none;
-}
-
-.card a:hover {
-  text-decoration: underline;
 }
 
 .card_title {

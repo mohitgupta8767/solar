@@ -5,7 +5,7 @@ import { sidebarItems } from "./Sidebar";
 const Header = () => {
     const { setIframeSrc } = useContext(SidebarContext);
     return (
-        <header className="header flex items-center p-4 h-[50px] static insert-y-0">
+        <header className="bg-white border-b border-gray-300 flex items-center p-4 h-[50px] static insert-y-0">
             <div className="flex cursor-pointer" onClick={() => setIframeSrc(sidebarItems[0].href)}>
                 <img 
                 src="https://media.licdn.com/dms/image/v2/C4E0BAQEwnsIG51s6mg/company-logo_200_200/company-logo_200_200/0/1630405333526?e=1732752000&v=beta&t=QF5iDucqPBkOn602FUgrKwHjCgaDP0-PrTFiHdwP518"
