@@ -16,7 +16,7 @@ export const data = [
   ],
   ['Jan-24 PV Infolink', 30, 14, 13, 7, 5, 3, 28],
   ['May-24 PV Infolink', 24, 15, 14, 8, 6, 4, 29],
-  ['May-24 Adani Solar', 24, 12, 14, 9, 7, 3, 30],
+  ['May-24 Adani Solar', 24, 12, 14, 9, 7, 4, 30],
 ];
 
 export const options = {
@@ -36,7 +36,7 @@ export const options = {
   vAxis: {
     format: '#\'%\'',
     textStyle: { color: '#333', fontSize: 12 },
-    title: 'Percentage',
+    title: 'Cost Contribution %',
     titleTextStyle: { color: '#333', fontSize: 14 },
   },
 };
@@ -60,7 +60,7 @@ const BarGraph = () => {
   }, [sidebarOpen])
 
   return (
-    <div className="chart-container" style={{ width: "370px", marginLeft: sidebarOpen ? "0" : "40px" }}>
+    <div className="w-[100%]" style={{ width: "370px", marginLeft: sidebarOpen ? "0" : "40px" }}>
       <Chart
         key={key}
         width={"100%"}

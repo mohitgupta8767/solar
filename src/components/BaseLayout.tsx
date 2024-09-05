@@ -12,15 +12,16 @@ export default function BaseLayout({ children }: Props) {
     return (
         <>
             <Header />
-            <div className="layout">
+            <div className="layout flex gap-2">
                 <Sidebar  />
-                <div className="body_layout">
+                <div className="grow overflow-auto h-full w-full">
                     {children}
                     {typeof iframeSrc === "string" ?
                         <iframe
                             src={iframeSrc}
-                            style={{ width: "100%", height: "100%", border: "none" }}
+                            style={{ width: "100%", height: "200%", border: "none" }}
                             title="Content Display"
+                            allowFullScreen
                         ></iframe>
                         :
                         iframeSrc

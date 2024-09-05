@@ -15,17 +15,17 @@ const platform = [
 
 const HomeContent = () => {
     return (
-        <div className="home-content">
+        <div className="rounded-md">
             <p>Ancillary components for photovoltaic (PV) systems account for approximately 47% of the total cost of a solar panel. Given the influence of the commodity market on these costs, a pricing intelligence platform becomes essential to:</p>
-            <ul >
+            <ul className="list-disc pl-5 mb-0">
                 {list.map(item => (
                     <li key={item.id}>{item.name}</li>
                 ))}
             </ul>
             <p>Our platform enables you to make data-driven decisions and gain a competitive edge through:</p>
-            <ul className="platform-list">
+            <ul className="flex list-none p-0 my-5">
                 {platform.map(item => (
-                    <li key={item.id} className="platform-item">{item.name}</li>
+                    <li key={item.id} className="mr-5">{item.name}</li>
                 ))}
             </ul>
         </div>

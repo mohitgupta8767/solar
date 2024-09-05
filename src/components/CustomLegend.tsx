@@ -12,15 +12,15 @@ const colors = [
     '#e194bc',
     '#da8868',
     '#939393', 
-  ];
+];
 
 const CustomLegend: React.FC<CustomLegendProps> = ({ labels }) => {
   return (
-    <div className="custom-legend">
+    <div className="flex flex-wrap mt-2.5 text-sm">
       {labels.map((label, index) => (
-        <div key={index} className="legend-item">
+        <div key={index} className="flex items-center mr-5">
           <span
-            className="legend-color"
+            className="w-4 h-4 inline-block mr-2"
             style={{ backgroundColor: colors[index] }}
           ></span>
           {label}

@@ -60,26 +60,26 @@ const Sidebar: FC<SidebarProps> = () => {
     };
 
     return (
-        <div className="sidebar_wrapper">
-            <button className="btn" onClick={toggleSidebar} aria-label="Toggle sidebar">
+        <div className="h-[100%] relative">
+            <button className="absolute right-0 top-16 border-none bg-white w-6 h-6 border border-gray-300 rounded-[10%] flex justify-center items-center cursor-pointer translate-x-1/2 text-[1.1rem]" onClick={toggleSidebar} aria-label="Toggle sidebar">
                 {!sidebarOpen ? <MdKeyboardArrowRight /> : <MdKeyboardArrowLeft />}
             </button>
-            <aside className="sidebar" data-collapse={!sidebarOpen}>
-                <ul className="sidebar_list">
+            <aside className="flex h-[100%] p-4 flex-col w-[17rem] bg-white transition-all duration-300 ease-[cubic-bezier(0.175,0.885,0.32,1.275)]" data-collapse={!sidebarOpen}>
+                <ul className="list-none">
                     {sidebarItems.map(({ name, href, icon: Icon }) => (
-                        <li key={name} className="sidebar_item cursor-pointer"  onClick={() => handleClick(href)}>
-                            <span className="sidebar_link">
-                                <span className="sidebar_icon">
+                        <li key={name} className="cursor-pointer"  onClick={() => handleClick(href)}>
+                            <span className="sidebar_link inline-block text-base font-semibold no-underline text-black px-4 py-3 flex bg-gray-100 mb-4 rounded-lg transition-colors duration-300">
+                                <span className="text-[1.3rem] inline-block text-[#0f7ba9]">
                                     <Icon />
                                 </span>
-                                <span className="sidebar_name">
+                                <span className="sidebar_name ml-2 bg-gradient-to-r from-[#0f7ba9] via-[#0f7ba9] to-[#ab3574] bg-clip-text text-transparent">
                                     {name}
                                 </span>
                             </span>
                         </li>
                     ))}
                 </ul>
-                <p className="sidebar_logo-name">Powered by Adani AI Labs</p>
+                <p className="sidebar_logo-name text-base font-semibold mt-auto">Powered by Adani AI Labs</p>
             </aside>
         </div>
     );
