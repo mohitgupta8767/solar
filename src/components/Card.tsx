@@ -1,44 +1,53 @@
-import React, { useState, useContext } from "react";
-import { SidebarContext } from "./SidebarContext";
+import Image from "next/image";
+import React from "react";
+import { Typography } from "@mui/material";
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import wafer from "../Assets/pvindustry.png";
 
-export default function Card({ title, description, items, icon: Icon }: any) {
-  const { setIframeSrc } = useContext(SidebarContext);
-  const [isExpanded, setIsExpanded] = useState(false);
 
-  const handleClick = () => {
-    if (title !== "Overview") {
-      setIframeSrc(items);
-    }
-  };
-
-  const toggleExpand = () => {
-    setIsExpanded(!isExpanded);
-  };
-
-  const truncatedDescription = description.slice(0, 100);
-  const isTruncated = description.length > 100;
-
+function CardMui() {
   return (
-    <div className="bg-white shadow-lg rounded-lg p-6 transition-transform transform cursor-pointer">
-      <div className="flex items-center mb-6 cursor-pointer" onClick={handleClick}>
-        <h3 className="card_title mr-4 text-xl font-semibold">{title}</h3>
-        <span className="sidebar_icon"><Icon /></span>
+    <Card
+      sx={{
+        maxWidth: 500,
+        margin: 'auto',
+        display: 'flex',
+        flexDirection: 'column',
+        height: '100%',
+        opacity: '0.9'
+      }}
+    >
+      <div style={{ position: 'relative', width: '100%', height: '120px', overflow: 'hidden' }}>
+        <Image
+          src={wafer}
+          alt="image"
+          layout="fill"
+          objectFit="cover"
+        />
       </div>
-      
-      {/* <hr className="my-4 border-gray-300" /> */}
-      <p className="text-gray-700">
-        {description}
-        {/* {isExpanded ? description : truncatedDescription} */}
-        {/* {isTruncated && !isExpanded && "..."} */}
-      </p>
-      {/* {isTruncated && (
-        <button
-          className="text-blue-500 mt-2"
-          onClick={toggleExpand}
+      <CardContent sx={{ flexGrow: 1 }}>
+        <Typography
+          variant="body2"
+          sx={{
+            color: "text.secondary", marginTop: "16px",
+
+          }}
         >
-          {isExpanded ? "Read Less" : "Read More"}
-        </button>
-      )} */}
-    </div>
+          China's solar PV industry maintains a dominant global position,
+          controlling all key segments of the supply chain from polysilicon
+          production to module assembly. This market leadership is driven by
+          substantial investments in capacity expansion, technological
+          advancements, and stringent government-backed efficiency and
+          environmental standards. Key players like LONGi, TCL Zhonghuan, JA
+          Solar, Trina Solar, JinkoSolar, and Canadian Solar lead respective
+          segments, consistently pushing cost reductions and performance
+          improvements.
+        </Typography>
+      </CardContent>
+    </Card>
+
   );
 }
+
+export default CardMui;

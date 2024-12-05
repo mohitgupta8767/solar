@@ -29,23 +29,23 @@ const AboutPage = () => {
 
                     <div className="flex mt-2">
                         <a href="https://www.facebook.com/AdaniOnline" target="_blank" rel="noopener noreferrer">
-                            <FaFacebookF className="mr-4" fill="#0f7ba9"/>
+                            <FaFacebookF className="mr-4" fill="#0f7ba9" />
                         </a>
 
                         <a href="https://x.com/AdaniAILabs" target="_blank" rel="noopener noreferrer">
-                            <RiTwitterXFill className="mr-4" fill="#0f7ba9"/>
+                            <RiTwitterXFill className="mr-4" fill="#0f7ba9" />
                         </a>
 
                         <a href="https://www.linkedin.com/company/adani-ai-labs/" target="_blank" rel="noopener noreferrer">
-                            <FaLinkedin className="mr-4" fill="#0f7ba9"/>
+                            <FaLinkedin className="mr-4" fill="#0f7ba9" />
                         </a>
 
                         <a href="https://www.instagram.com/adanionline/" target="_blank" rel="noopener noreferrer">
-                            <FaInstagram className="mr-4" fill="#0f7ba9"/>
+                            <FaInstagram className="mr-4" fill="#0f7ba9" />
                         </a>
 
                         <a href="https://www.youtube.com/user/AdaniOnline" target="_blank" rel="noopener noreferrer">
-                            <FaYoutube className="mr-4" fill="#0f7ba9"/>
+                            <FaYoutube className="mr-4" fill="#0f7ba9" />
                         </a>
                     </div>
                 </div>
