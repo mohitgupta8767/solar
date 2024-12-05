@@ -30,12 +30,12 @@ export const sidebarItems: SidebarItem[] = [
         icon: GoGraph
     },
     {
-        name: "Solar PV",
+        name: "PV Chat Bot",
         href: "https://solarpvchatbot-fneah8d7hddtdcfm.centralindia-01.azurewebsites.net/",
         icon: FaRobot,
     },
     {
-        name: "Solar Ancillary",
+        name: "Ancillary Chat Bot",
         href: "https://solarstreamlit.azurewebsites.net/",
         icon: FaRobot,
     },

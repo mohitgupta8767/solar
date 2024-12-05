@@ -27,13 +27,7 @@ function CardMui() {
         />
       </div>
       <CardContent sx={{ flexGrow: 1 }}>
-        <Typography
-          variant="body2"
-          sx={{
-            color: "text.secondary", marginTop: "16px",
-
-          }}
-        >
+        <div style={{ fontWeight: 300 }}>
           China's solar PV industry maintains a dominant global position,
           controlling all key segments of the supply chain from polysilicon
           production to module assembly. This market leadership is driven by
@@ -43,7 +37,7 @@ function CardMui() {
           Solar, Trina Solar, JinkoSolar, and Canadian Solar lead respective
           segments, consistently pushing cost reductions and performance
           improvements.
-        </Typography>
+        </div>
       </CardContent>
     </Card>
 

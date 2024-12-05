@@ -25,7 +25,7 @@ const Footer = () => {
                     <FaYoutube size={20} className="mr-4" fill="#0f7ba9" />
                 </a>
             </div>
-            <p className="mb-2">
+            <p className="mb-2" style={{ fontWeight: 300 }}>
                 A venture by the Adani Group, Adani AI Labs uses AI and optimization techniques to solve complex business challenges to unlock value and foster unique competitive advantages.
             </p>
 
@@ -34,6 +34,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm mb-2 text-blue-500 underline hover:text-blue-700"
+                style={{ fontWeight: 500 }}
             >https://www.adani.com/</a>
 
         </footer>
