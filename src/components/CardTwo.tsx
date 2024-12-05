@@ -30,14 +30,14 @@ export default function CardTwo() {
             title: "PV Chat Bot",
             image: chat1,
             description: "This specialized chatbot provides comprehensive insights into the Chinese and global solar industry through a user-friendly Q&A interface. Leveraging forecasts, reports, and real-time data, it delivers well-grounded information for decision-making.",
-            items: sidebarItems[3].href
+            items: sidebarItems[2].href
         },
         {
             id: 3,
             title: "Ancillary Chat bot",
             image: ancillarybot,
             description: "This specialized chatbot provides comprehensive insights into the Chinese and global solar industry through a user-friendly Q&A interface. Leveraging forecasts, reports, and real-time data, it delivers well-grounded information for decision-making.",
-            items: sidebarItems[2].href
+            items: sidebarItems[3].href
         },
         {
             id: 4,
