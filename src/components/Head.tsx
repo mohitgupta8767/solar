@@ -3,7 +3,7 @@ import Head from 'next/head';
 type HeadProps = {
   title: string;
   description: string;
-  iconHref:string;
+  iconHref: string;
 };
 
 const CustomHead = ({ title, description, iconHref }: HeadProps) => (
@@ -15,4 +15,3 @@ const CustomHead = ({ title, description, iconHref }: HeadProps) => (
 );
 
 export default CustomHead;
- 

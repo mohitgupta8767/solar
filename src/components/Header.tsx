@@ -8,7 +8,8 @@ import Image from "next/image";
 const Header = () => {
     const { setIframeSrc } = useContext(SidebarContext);
     return (
-        <header className="bg-white border-b border-gray-300 flex items-center p-4 h-[50px] static insert-y-0">
+        <header className="bg-white border-b border-gray-300 flex items-center justify-between p-4 h-[50px]">
+            {/* Left Section */}
             <div className="flex cursor-pointer" onClick={() => setIframeSrc(sidebarItems[0].href)}>
                 <Image
                     src={renewableLogo}
@@ -21,10 +22,13 @@ const Header = () => {
                     className="w-12 h-auto"
                 />
             </div>
-            <h1 className="header_title text-2xl font-semibold ml-[25%]">Solar Price Intelligence AI Platform</h1>
-            {/* <div className="avatar">A</div> */}
+
+            <h1 className="header_title text-2xl font-semibold absolute left-1/2 transform -translate-x-1/2">
+                Solar Price Intelligence AI Platform
+            </h1>
+
         </header>
-    )
-}
+    );
+};
 
 export default Header;

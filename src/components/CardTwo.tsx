@@ -1,7 +1,6 @@
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
 import Image from 'next/image';
 import analytical from "../Assets/analytical.png";
 import { SidebarContext } from "./SidebarContext";
@@ -77,8 +76,8 @@ export default function CardTwo() {
                         <h6 className="text-[#0f7ba9] text-center" style={{ fontWeight: 600 }}>
                             {item.title}
                         </h6>
-                        <CardContent sx={{ flexGrow: 1 }} style={{ paddingTop: "0", paddingBottom: "0px" }}>
-                            <div style={{ fontWeight: 300 }}>
+                        <CardContent sx={{ flexGrow: 1 }} style={{ paddingTop: "0", paddingBottom: "10px" }}>
+                            <div style={{ fontWeight: 300, fontSize: "12px" }}>
                                 {item.description}
                             </div>
                         </CardContent>

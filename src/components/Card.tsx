@@ -27,7 +27,7 @@ function CardMui() {
         />
       </div>
       <CardContent sx={{ flexGrow: 1 }}>
-        <div style={{ fontWeight: 300 }}>
+        <div style={{ fontWeight: 300, fontSize: "12px" }}>
           China's solar PV industry maintains a dominant global position,
           controlling all key segments of the supply chain from polysilicon
           production to module assembly. This market leadership is driven by
