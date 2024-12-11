@@ -20,21 +20,14 @@ const HomePage = () => {
             title: "Prediction Dashboard",
             description: "Interactive dashboard to analyze historical component data, identify trends, and market fluctuations to aid informed strategic procurement decisions.",
             image: predictiond,
-            items: sidebarItems[4].href
+            items: sidebarItems[1].href
         },
         {
             id: 2,
             title: "Analytical Dashboard",
             description: "This platform provides a price intelligence dashboard with 1-year price forecasting capabilities driven by multiple market, demand, and trend factors. It offers procurement recommendations by comparing the lowest predicted future price with the current spot price.",
             image: analytical,
-            items: sidebarItems[1].href
-        },
-        {
-            id: 3,
-            title: "Ancillary Chat Bot",
-            description: "This specialized chatbot provides comprehensive insights into the Chinese and global solar industry through a user-friendly Q&A interface. Leveraging forecasts, reports, and real-time data, it delivers well-grounded information for decision-making.",
-            image: ancillarybot,
-            items: sidebarItems[3].href
+            items: sidebarItems[4].href
         },
         {
             id: 4,
@@ -43,6 +36,14 @@ const HomePage = () => {
             image: chat1,
             items: sidebarItems[2].href
         },
+        {
+            id: 3,
+            title: "Ancillary Chat Bot",
+            description: "This specialized chatbot provides comprehensive insights into the Chinese and global solar industry through a user-friendly Q&A interface. Leveraging forecasts, reports, and real-time data, it delivers well-grounded information for decision-making.",
+            image: ancillarybot,
+            items: sidebarItems[3].href
+        },
+
     ];
 
     const handleClick = (item: any) => {
