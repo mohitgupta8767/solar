@@ -25,9 +25,16 @@ const HomePage = () => {
         {
             id: 2,
             title: "Analytical Dashboard",
-            description: "This platform provides a price intelligence dashboard with 1-year price forecasting capabilities driven by multiple market, demand, and trend factors. It offers procurement recommendations by comparing the lowest predicted future price with the current spot price.",
+            description: "This specialized chatbot provides comprehensive insights into the Chinese and global solar industry through a user-friendly Q&A interface. Leveraging forecasts, reports, and real-time data, it delivers well-grounded information for decision-making.",
             image: analytical,
             items: sidebarItems[4].href
+        },
+        {
+            id: 3,
+            title: "Ancillary Chat Bot",
+            description: "This platform provides a price intelligence dashboard with 1-year price forecasting capabilities driven by multiple market, demand, and trend factors. It offers procurement recommendations by comparing the lowest predicted future price with the current spot price.",
+            image: ancillarybot,
+            items: sidebarItems[3].href
         },
         {
             id: 4,
@@ -36,14 +43,6 @@ const HomePage = () => {
             image: chat1,
             items: sidebarItems[2].href
         },
-        {
-            id: 3,
-            title: "Ancillary Chat Bot",
-            description: "This specialized chatbot provides comprehensive insights into the Chinese and global solar industry through a user-friendly Q&A interface. Leveraging forecasts, reports, and real-time data, it delivers well-grounded information for decision-making.",
-            image: ancillarybot,
-            items: sidebarItems[3].href
-        },
-
     ];
 
     const handleClick = (item: any) => {
@@ -63,15 +62,7 @@ const HomePage = () => {
 
                         <div className="flex flex-col justify-center">
                             <p className="text-gray-600 text-left">
-                                China's solar PV industry maintains a dominant global position,
-                                controlling all key segments of the supply chain from polysilicon
-                                production to module assembly. This market leadership is driven by
-                                substantial investments in capacity expansion, technological
-                                advancements, and stringent government-backed efficiency and
-                                environmental standards. Key players like LONGi, TCL Zhonghuan, JA
-                                Solar, Trina Solar, JinkoSolar, and Canadian Solar lead respective
-                                segments, consistently pushing cost reductions and performance
-                                improvements.
+                                This platform offers a comprehensive solution for managing and understanding the photovoltaic (PV) component market. It provides a 24-week rolling forecast for both core and ancillary PV components, going beyond simple predictions by offering procurement recommendations based on these forecasts. The application also prioritizes transparency by explaining the reasoning behind its predictions. Users can compare the application's forecasts with those from PV-Infolink and SMM, gaining a broader perspective on market trends. An analytical dashboard presents key indicators that delve into the technical and fundamental factors influencing prices. Furthermore, the application includes two specialized chatbots that can answer user questions about real-time market scenarios and potential future developments, drawing on published news, reports, generated forecasts, and historical data. This combination of forecasting, analysis, and interactive information makes it a powerful tool for anyone involved in the PV component market.
                             </p>
                         </div>
                     </div>

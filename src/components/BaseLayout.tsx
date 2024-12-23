@@ -2,6 +2,7 @@ import { ReactNode, useContext } from "react"
 import Sidebar from "./Sidebar"
 import Header from "./Header"
 import { SidebarContext } from "./SidebarContext";
+import AuthProvider from "./AuthProvider";
 
 interface Props {
     children: ReactNode | ReactNode[]
@@ -11,9 +12,9 @@ export default function BaseLayout({ children }: Props) {
     const { iframeSrc } = useContext(SidebarContext);
 
     return (
-        <>
+        <AuthProvider>
             <Header />
-            <div className="h-[calc(100vh-50px)] flex  mr-2 relative">
+            <div className="h-[calc(100vh-50px)] flex mr-2 relative">
                 <Sidebar />
                 <div className="grow overflow-auto h-full w-full relative">
                     <div className="absolute top-0 left-0 w-full h-full">
@@ -37,6 +38,6 @@ export default function BaseLayout({ children }: Props) {
                     </div>
                 </div>
             </div>
-        </>
-    )
+        </AuthProvider>
+    );
 } 
