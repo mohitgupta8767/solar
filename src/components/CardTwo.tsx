@@ -25,7 +25,7 @@ export default function CardTwo() {
             id: 2,
             title: "Analytical Dashboard",
             image: analytical,
-            description: "This platform provides a price intelligence dashboard with 1-year price forecasting capabilities driven by multiple market, demand, and trend factors. It offers procurement recommendations by comparing the lowest predicted future price with the current spot price.",
+            description: "This platform provides a price intelligence dashboard with 6 months price forecasting capabilities driven by multiple market, demand, and trend factors. It offers procurement recommendations by comparing the lowest predicted future price with the current spot price.",
             items: sidebarItems[1].href
         },
         {

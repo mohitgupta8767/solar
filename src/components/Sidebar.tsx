@@ -26,7 +26,7 @@ export const sidebarItems: SidebarItem[] = [
     },
     {
         name: "Price Intelligence Dashboard",
-        href: "https://app.powerbi.com/reportEmbed?reportId=91db9061-8288-4e44-9da4-78a8e67bfb8c&autoAuth=true&tid=04c72f56-1848-46a2-8167-8e5d36510cbc",
+        href: " https://app.powerbi.com/view?r=eyJrIjoiOTBhYWE1ODQtYzMyMS00MWE2LTgzNTItNjFkNTlhOWEyOTNkIiwidCI6IjA0YzcyZjU2LTE4NDgtNDZhMi04MTY3LThlNWQzNjUxMGNiYyJ9",
         icon: GoGraph
     },
     {

@@ -2,7 +2,6 @@ import { ReactNode, useContext } from "react"
 import Sidebar from "./Sidebar"
 import Header from "./Header"
 import { SidebarContext } from "./SidebarContext";
-import AuthProvider from "./AuthProvider";
 
 interface Props {
     children: ReactNode | ReactNode[]
@@ -12,7 +11,7 @@ export default function BaseLayout({ children }: Props) {
     const { iframeSrc } = useContext(SidebarContext);
 
     return (
-        <AuthProvider>
+        <>
             <Header />
             <div className="h-[calc(100vh-50px)] flex mr-2 relative">
                 <Sidebar />
@@ -38,6 +37,6 @@ export default function BaseLayout({ children }: Props) {
                     </div>
                 </div>
             </div>
-        </AuthProvider>
+        </>
     );
 } 

@@ -32,7 +32,7 @@ const HomePage = () => {
         {
             id: 3,
             title: "Ancillary Chat Bot",
-            description: "This platform provides a price intelligence dashboard with 1-year price forecasting capabilities driven by multiple market, demand, and trend factors. It offers procurement recommendations by comparing the lowest predicted future price with the current spot price.",
+            description: "This platform provides a price intelligence dashboard with 6 months price forecasting capabilities driven by multiple market, demand, and trend factors. It offers procurement recommendations by comparing the lowest predicted future price with the current spot price.",
             image: ancillarybot,
             items: sidebarItems[3].href
         },
